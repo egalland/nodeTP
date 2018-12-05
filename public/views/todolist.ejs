@@ -1,0 +1,13 @@
+<%- include('header'); -%>
+<h1>Ma todolist</h1>
+<ul>
+<% test.forEach((id, t) =>{ %>
+<li id="<%= t %>"><span>X</span> <%= id %></li>
+<% }); %>
+</ul>
+<form method="POST" action="/">
+    <label for="inputList"><label>
+    <input type="text" id="inputList" name="inputList" />
+    <input type="submit" id="send" value="Valider" />
+</form> 
+<%- include('footer'); -%>
